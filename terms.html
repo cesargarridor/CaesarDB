@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Términos de uso (EULA)</title>
+<meta name="description" content="Términos de uso y licencia de CaesarDB.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Principal"><a href="index.html">Inicio</a><a href="pricing.html">Precios</a><a href="support.html">Soporte</a><a href="security.html">Seguridad</a></nav>
+<div class="lang" aria-label="Idioma / Language"><span>ES</span><a href="en/terms.html" hreflang="en" lang="en">EN</a></div>
+</div></header>
+<main><div class="wrap narrow legal-page">
+<h1>Términos de uso y licencia (EULA)</h1>
+<div class="meta">Última actualización: 22 de noviembre de 2026</div>
+<div class="box"><p><strong>Resumen.</strong> CaesarDB es software de código privado que se licencia, no se vende. Se ofrece «tal cual», bajo tu responsabilidad y con los permisos IAM de tus propias credenciales de AWS. Tú decides qué haces con tus datos y mantienes tus backups.</p></div><section><h2>Objeto y aceptación</h2>
+<p>Estos términos regulan el uso de CaesarDB, un cliente de escritorio para Amazon DynamoDB (la «aplicación»), y de este sitio web. Los aceptas al marcar la casilla de aceptación que se muestra en el primer arranque de la aplicación (y de nuevo si los términos cambian de forma relevante) y, en todo caso, al instalar, activar o usar la aplicación. Si no estás de acuerdo, no la uses. El titular es Cesar Garrido (persona física), NIF 78164624K (ver <a href="legal.html">Aviso legal</a>).</p>
+</section>
+<section><h2>Licencia de uso</h2>
+<p>CaesarDB es software de <strong>código privado</strong>; se distribuye como binarios firmados y su código fuente no es público. Se concede una licencia personal, no exclusiva e intransferible:</p>
+<ul><li><strong>Una licencia por usuario</strong>, utilizable <strong>hasta en 3 equipos</strong> a la vez (activaciones gestionadas desde el <a href="https://polar.sh/caesar-api-client/portal" data-portal>portal de Polar</a>).</li><li>Prohibida la redistribución, venta, alquiler, sublicencia o puesta a disposición de terceros de la aplicación o de tu clave de licencia.</li><li>Prohibida la ingeniería inversa, descompilación o desensamblado, <strong>salvo en la medida en que la ley aplicable lo permita expresamente</strong> e imperativamente (por ejemplo, para interoperabilidad).</li><li>Prohibido eludir o alterar los mecanismos de licencia o de limitación de funciones.</li><li>El nombre, el logotipo, el icono y la mascota de CaesarDB y todos los derechos de propiedad intelectual pertenecen a su titular.</li></ul>
+<p>El plan <strong>Free</strong> es de uso gratuito con funciones limitadas. Las licencias gratuitas, promocionales o de cortesía son <strong>revocables</strong> en cualquier momento y no generan derecho a reembolso ni compensación. Las licencias de pago no se revocan salvo incumplimiento grave de estos términos.</p>
+</section>
+<section><h2>Planes, precios y pagos</h2>
+<p>Los planes y funciones se describen en <a href="pricing.html">Precios</a>. Los pagos los gestiona <strong>Polar</strong> como vendedor de registro (<em>merchant of record</em>): cobra el importe, calcula y liquida los impuestos aplicables, emite el recibo y trata los datos de pago. El precio y los impuestos se muestran en la página de pago antes de que pagues. La licencia Pro es de pago único (no se renueva automáticamente), salvo que el plan que elijas indique otra cosa en el momento de la compra. Los precios pueden cambiar para compras futuras.</p>
+</section>
+<section><h2>Uso bajo tu responsabilidad</h2>
+<ul><li>Eres el <strong>único responsable de todas las operaciones</strong> que realices en DynamoDB con la aplicación (lecturas, escrituras, borrados, importaciones, migraciones, truncados, cambios de esquema, índices, TTL, backups, etc.) y de sus consecuencias.</li><li>Debes <strong>mantener backups activos</strong> (por ejemplo, Point-in-Time Recovery y copias on-demand) <strong>antes</strong> de modificar, migrar o borrar datos. La aplicación puede ofrecer avisos, modo Read-Only o confirmaciones, pero no sustituyen tus copias de seguridad.</li><li>El <strong>servidor MCP</strong> y toda operación de escritura se ejecutan <strong>bajo tu responsabilidad y con los permisos IAM de las credenciales que configures</strong>. Si conectas un agente de IA, las acciones que este realice son tuyas. Usa credenciales de mínimo privilegio.</li><li>Eres responsable de las credenciales que introduces, de tener derecho a acceder a los datos y de cumplir la normativa aplicable (incluida la de protección de datos de los datos que trates).</li><li>No uses CaesarDB para actividades ilícitas ni para acceder a sistemas sin autorización.</li></ul>
+</section>
+<section><h2>Servidor MCP y agentes de IA</h2>
+<p>El servidor MCP local permite que un agente de IA consulte (y, si lo activas expresamente, escriba en) tus tablas. Es de solo lectura por defecto y tiene topes por llamada, pero <strong>actúa con tus credenciales y permisos IAM</strong>. Decides tú qué agente lo usa, con qué rol y sobre qué datos; las acciones y sus consecuencias (incluidas las generadas por el agente) son de tu responsabilidad.</p>
+</section>
+<section><h2>Costes de AWS</h2>
+<p>Las consultas, <em>Scan</em> masivos, importaciones, copias, <em>Live Tail</em> de DynamoDB Streams, métricas de CloudWatch y el uso del servidor MCP por agentes de IA consumen capacidad y pueden generar cargos en tu cuenta de AWS. <strong>Ni el autor ni CaesarDB se responsabilizan de los cargos derivados</strong>. La aplicación muestra métricas orientativas (RCU, elementos escaneados) y puede limitar algunas operaciones, pero la gestión de costes, presupuestos y alertas es tuya.</p>
+</section>
+<section><h2>Software «tal cual»</h2>
+<p>En la máxima medida permitida por la legislación aplicable, la aplicación se ofrece «<strong>tal cual</strong>» (<em>AS IS</em>) y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas, incluidas las de comerciabilidad, adecuación a un fin concreto, ausencia de errores o de interrupciones, o resultados concretos. Pueden existir errores, cambios en la API de AWS o interrupciones del servicio de licencias o de actualizaciones.</p>
+</section>
+<section><h2>Limitación de responsabilidad</h2>
+<p>En la máxima medida permitida por la legislación aplicable, el autor no será responsable de daños indirectos, consecuentes, especiales o punitivos, ni de <strong>pérdida o corrupción de datos</strong>, lucro cesante, pérdida de negocio, interrupciones, ni de cargos de AWS o de terceros, derivados del uso o de la imposibilidad de usar la aplicación. La responsabilidad total acumulada del autor frente a ti por cualquier reclamación <strong>no excederá del importe exacto que hayas pagado por la licencia</strong> (en el caso de licencias gratuitas, 0 €).</p>
+<div class="box warn"><p><strong>Lo que no se limita.</strong> Nada de lo anterior excluye ni limita la responsabilidad por <strong>dolo o negligencia grave</strong>, por daños a la vida o integridad física, ni los <strong>derechos irrenunciables de los consumidores</strong> (incluida la garantía legal de conformidad y el derecho de desistimiento cuando proceda), ni ninguna responsabilidad que no pueda excluirse conforme a la ley, en particular la de la Unión Europea y la española.</p></div>
+</section>
+<section><h2>Desistimiento y reembolsos</h2>
+<p>El pago lo gestiona Polar como <em>merchant of record</em>; su política de reembolsos se aplica a las compras. Si eres consumidor en la UE, tienes derecho de desistimiento de 14 días, <strong>salvo en contenido digital cuya ejecución haya comenzado con tu consentimiento expreso</strong>: al iniciar la descarga o la activación de la licencia, con tu consentimiento previo expreso y el reconocimiento de que pierdes el desistimiento, este se extingue. Con independencia de ello, el autor puede ofrecer un periodo de cortesía; consulta el texto vigente en <a href="refunds.html">Reembolsos</a>.</p>
+</section>
+<section><h2>Actualizaciones y cambios</h2>
+<p>La aplicación busca actualizaciones firmadas en GitHub Releases. Las funciones pueden cambiar, y el contenido de los planes puede evolucionar sin reducir lo ya adquirido de forma injustificada. Podemos actualizar estos términos; la fecha de arriba indica la versión vigente y, si el cambio es relevante, se avisará.</p>
+</section>
+<section><h2>Suspensión y terminación</h2>
+<p>Puedes dejar de usar la aplicación cuando quieras. El autor podrá suspender o revocar una licencia ante incumplimiento grave, fraude o uso ilícito; en licencias de pago se estudiará el reembolso conforme a la ley. Las cláusulas que por su naturaleza deban sobrevivir lo harán.</p>
+</section>
+<section><h2>Ley aplicable y jurisdicción</h2>
+<p>Estos términos se rigen por la <strong>ley española</strong>. Si eres consumidor, serás competente el <strong>tribunal de tu domicilio</strong>, sin perjuicio de los derechos que te reconozca la normativa imperativa de tu país de residencia. En otros casos, los juzgados y tribunales que correspondan conforme a la ley.</p>
+</section>
+<section><h2>Contacto</h2>
+<p>Cesar Garrido (persona física) · NIF 78164624K · Avenida Madrid, 23003 Jaén (España) · <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a></p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB es software de código privado, distribuido como binarios firmados. Sin cookies, sin trackers y sin telemetría. Esta web es estática y no carga recursos externos.</p>
+<p><a href="terms.html">Términos de uso</a> · <a href="privacy.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Reembolsos</a> · <a href="legal.html">Aviso legal</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

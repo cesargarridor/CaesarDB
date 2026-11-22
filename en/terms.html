@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Terms of use (EULA)</title>
+<meta name="description" content="CaesarDB terms of use and license.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="../assets/logo.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="../assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="support.html">Support</a><a href="security.html">Security</a></nav>
+<div class="lang" aria-label="Idioma / Language"><a href="../terms.html" hreflang="es" lang="es">ES</a><span>EN</span></div>
+</div></header>
+<main><div class="wrap narrow legal-page">
+<h1>Terms of use and license (EULA)</h1>
+<div class="meta">Last updated: 22 November 2026</div>
+<div class="box"><p><strong>Summary.</strong> CaesarDB is closed-source software that is licensed, not sold. It is provided “as is”, at your own responsibility and under the IAM permissions of your own AWS credentials. You decide what you do with your data and you keep your own backups.</p></div><section><h2>Purpose and acceptance</h2>
+<p>These terms govern the use of CaesarDB, a desktop client for Amazon DynamoDB (the “application”), and of this website. You accept them by ticking the acceptance box shown at the application’s first launch (and again if the terms change materially) and, in any case, by installing, activating or using the application. If you do not agree, do not use it. The licensor is Cesar Garrido (persona física), tax ID 78164624K (see <a href="legal.html">Legal notice</a>).</p>
+</section>
+<section><h2>License</h2>
+<p>CaesarDB is <strong>closed-source</strong> software distributed as signed binaries; its source code is not public. You are granted a personal, non-exclusive, non-transferable license:</p>
+<ul><li><strong>One license per user</strong>, usable on <strong>up to 3 machines</strong> at a time (activations managed from the <a href="https://polar.sh/caesar-api-client/portal" data-portal>Polar portal</a>).</li><li>No redistribution, sale, rental, sublicensing or making the application or your license key available to third parties.</li><li>No reverse engineering, decompiling or disassembling, <strong>except to the extent that applicable law expressly and mandatorily permits it</strong> (for example, for interoperability).</li><li>No bypassing or tampering with the licensing or feature-limiting mechanisms.</li><li>The CaesarDB name, logo, icon and mascot and all intellectual property rights belong to the licensor.</li></ul>
+<p>The <strong>Free</strong> plan is free to use with limited features. Free, promotional or complimentary licenses are <strong>revocable</strong> at any time and give no right to a refund or compensation. Paid licenses are not revoked except for serious breach of these terms.</p>
+</section>
+<section><h2>Plans, prices and payments</h2>
+<p>Plans and features are described on the <a href="pricing.html">Pricing</a> page. Payments are handled by <strong>Polar</strong> as merchant of record: it collects the payment, calculates and remits applicable taxes, issues the receipt and processes payment data. The price and taxes are shown at checkout before you pay. The Pro license is a one-time payment (no automatic renewal) unless the plan you choose states otherwise at purchase. Prices may change for future purchases.</p>
+</section>
+<section><h2>Use at your own responsibility</h2>
+<ul><li>You are <strong>solely responsible for all operations</strong> you perform on DynamoDB with the application (reads, writes, deletes, imports, migrations, truncations, schema changes, indexes, TTL, backups, etc.) and for their consequences.</li><li>You must <strong>keep backups enabled</strong> (for example Point-in-Time Recovery and on-demand backups) <strong>before</strong> modifying, migrating or deleting data. The application may provide warnings, a Read-Only mode or confirmations, but they do not replace your backups.</li><li>The <strong>MCP server</strong> and every write operation run <strong>at your own responsibility and under the IAM permissions of the credentials you configure</strong>. If you connect an AI agent, the actions it takes are yours. Use least-privilege credentials.</li><li>You are responsible for the credentials you enter, for having the right to access the data and for complying with applicable law (including data protection law for the data you process).</li><li>Do not use CaesarDB for unlawful activity or to access systems without authorization.</li></ul>
+</section>
+<section><h2>MCP server and AI agents</h2>
+<p>The local MCP server lets an AI agent query (and, only if you expressly enable it, write to) your tables. It is read-only by default and has per-call caps, but it <strong>acts with your credentials and IAM permissions</strong>. You decide which agent uses it, with which role and on which data; the actions and their consequences (including those generated by the agent) are your responsibility.</p>
+</section>
+<section><h2>AWS costs</h2>
+<p>Queries, large <em>Scans</em>, imports, copies, DynamoDB Streams <em>Live Tail</em>, CloudWatch metrics and use of the MCP server by AI agents consume capacity and may generate charges on your AWS account. <strong>Neither the author nor CaesarDB is responsible for the resulting charges</strong>. The application shows indicative metrics (RCU, scanned items) and may limit some operations, but managing costs, budgets and alerts is up to you.</p>
+</section>
+<section><h2>Software “as is”</h2>
+<p>To the maximum extent permitted by applicable law, the application is provided “<strong>as is</strong>” and “as available”, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, absence of errors or interruptions, or any specific result. Errors, changes in the AWS API, or interruptions of the licensing or update services may occur.</p>
+</section>
+<section><h2>Limitation of liability</h2>
+<p>To the maximum extent permitted by applicable law, the author shall not be liable for indirect, consequential, special or punitive damages, nor for <strong>data loss or corruption</strong>, lost profits, loss of business, interruptions, or AWS or third-party charges, arising from the use of or inability to use the application. The author’s total cumulative liability to you for any claim <strong>shall not exceed the exact amount you paid for the license</strong> (for free licenses, €0).</p>
+<div class="box warn"><p><strong>What is not limited.</strong> Nothing above excludes or limits liability for <strong>willful misconduct or gross negligence</strong>, for death or personal injury, nor the <strong>non-waivable rights of consumers</strong> (including the statutory guarantee of conformity and the right of withdrawal where applicable), nor any liability that cannot be excluded by law, in particular EU and Spanish law.</p></div>
+</section>
+<section><h2>Withdrawal and refunds</h2>
+<p>Payment is handled by Polar as merchant of record, and Polar’s refund policy applies to purchases. If you are an EU consumer you have a 14-day right of withdrawal, <strong>except for digital content whose performance has begun with your express consent</strong>: once you start the download or the license activation, with your prior express consent and acknowledgement that you lose the right of withdrawal, that right lapses. Independently, the author may offer a courtesy period; see the current text on <a href="refunds.html">Refunds</a>.</p>
+</section>
+<section><h2>Updates and changes</h2>
+<p>The application checks for signed updates on GitHub Releases. Features may change, and plan contents may evolve without unjustifiably reducing what you already acquired. We may update these terms; the date above shows the current version and material changes will be announced.</p>
+</section>
+<section><h2>Suspension and termination</h2>
+<p>You may stop using the application at any time. The author may suspend or revoke a license for serious breach, fraud or unlawful use; for paid licenses a refund will be considered as required by law. Clauses that by their nature should survive will do so.</p>
+</section>
+<section><h2>Governing law and jurisdiction</h2>
+<p>These terms are governed by <strong>Spanish law</strong>. If you are a consumer, the <strong>courts of your place of residence</strong> have jurisdiction, without prejudice to the mandatory rights granted by the law of your country of residence. In other cases, the competent courts under the law.</p>
+</section>
+<section><h2>Contact</h2>
+<p>Cesar Garrido (persona física) · Tax ID 78164624K · Avenida Madrid, 23003 Jaén (España) · <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a></p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB is closed-source software, distributed as signed binaries. No cookies, no trackers and no telemetry. This site is static and loads no external resources.</p>
+<p><a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Refunds</a> · <a href="legal.html">Legal notice</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

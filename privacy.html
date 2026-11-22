@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Política de privacidad</title>
+<meta name="description" content="Política de privacidad de CaesarDB (RGPD / LOPDGDD): cero telemetría.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Principal"><a href="index.html">Inicio</a><a href="pricing.html">Precios</a><a href="support.html">Soporte</a><a href="security.html">Seguridad</a></nav>
+<div class="lang" aria-label="Idioma / Language"><span>ES</span><a href="en/privacy.html" hreflang="en" lang="en">EN</a></div>
+</div></header>
+<main><div class="wrap narrow legal-page">
+<h1>Política de privacidad</h1>
+<div class="meta">Última actualización: 22 de noviembre de 2026</div>
+<div class="box"><p><strong>Resumen.</strong> CaesarDB no tiene telemetría. Tus credenciales y tu configuración se quedan en tu equipo, cifradas, y no se envían al autor. Las únicas conexiones de red son tu endpoint de AWS, la validación de licencia con Polar y la búsqueda de actualizaciones en GitHub.</p></div><section><h2>Responsable del tratamiento</h2>
+<p>Cesar Garrido (persona física), NIF 78164624K, Avenida Madrid, 23003 Jaén (España). Contacto: <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a>.</p>
+</section>
+<section><h2>Qué datos toca la aplicación</h2>
+<ul><li><strong>Credenciales y configuración</strong> (claves de acceso secretas, tokens de sesión, credenciales de proxy, perfiles y conexiones): se guardan <strong>solo en tu equipo</strong>, en archivos cifrados localmente (AES-256-GCM, sin Llavero del sistema). <strong>No se envían al autor</strong> ni a ningún servidor propio.</li><li><strong>Datos de tus tablas</strong>: viajan únicamente entre tu equipo y tu endpoint de DynamoDB (AWS, o tu emulador local, o el proxy que configures). El autor no los recibe.</li><li><strong>Cero telemetría</strong>: no hay analíticas, ni informes de errores, ni identificadores de uso.</li><li>Los archivos que exportes o importes los eliges tú y se guardan donde indiques.</li></ul>
+</section>
+<section><h2>Comunicaciones de red del autor o de terceros</h2>
+<p>La aplicación solo realiza estas dos comunicaciones propias, además de las que tú configures hacia AWS:</p><ul><li><strong>Validación de licencia con Polar</strong>: se envían la clave de licencia y el nombre del equipo para activarla o comprobarla.</li><li><strong>Búsqueda de actualizaciones</strong> en GitHub Releases (descarga de un manifiesto y de paquetes firmados). GitHub puede ver tu dirección IP como en cualquier descarga.</li></ul>
+</section>
+<section><h2>Pagos y facturación: Polar</h2>
+<p>Las compras las procesa <strong>Polar</strong> como <em>merchant of record</em> y encargado/responsable independiente del tratamiento de los datos de pago y de facturación (nombre, correo, dirección, país, impuestos). El autor no ve tu tarjeta ni tus datos bancarios y recibe de Polar únicamente la información necesaria para gestionar tu licencia y la atención al cliente. Consulta la política de privacidad de Polar en su sitio. Puedes gestionar tus activaciones y recibos en el <a href="https://polar.sh/caesar-api-client/portal" data-portal>portal de cliente</a>.</p>
+</section>
+<section><h2>Este sitio web</h2>
+<p>El sitio es estático: <strong>no usa cookies</strong>, no incluye analíticas, trackers, fuentes ni scripts de terceros y no guarda nada en tu navegador (ver <a href="cookies.html">Cookies</a>). Los botones de descarga consultan la API pública de GitHub (<code>api.github.com</code>) para localizar el instalador más reciente; GitHub puede ver tu dirección IP en esa petición. Está alojado en un proveedor de alojamiento estático (GitHub Pages), que puede tratar tu dirección IP en registros técnicos de servidor conforme a su propia política.</p>
+</section>
+<section><h2>Finalidad y base jurídica</h2>
+<ul><li>Gestionar la licencia y prestar el servicio de activación: ejecución del contrato (art. 6.1.b RGPD).</li><li>Atender consultas de soporte: ejecución del contrato / interés legítimo (art. 6.1.b y 6.1.f).</li><li>Cumplir obligaciones legales (fiscales, de consumo): art. 6.1.c.</li></ul>
+</section>
+<section><h2>Conservación, destinatarios y transferencias</h2>
+<p>Conservamos los datos de licencia y de soporte mientras dure la relación y durante los plazos legales de prescripción. Los destinatarios son Polar (pagos y licencias) y GitHub (alojamiento y actualizaciones); ambos pueden tratar datos fuera del Espacio Económico Europeo, con las garantías que prevé el RGPD (como las cláusulas contractuales tipo). No vendemos datos.</p>
+</section>
+<section><h2>Tus derechos</h2>
+<p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad (derechos ARCO y RGPD) escribiendo a <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a>. Respondemos en el plazo legal (un mes). Si crees que no hemos tratado bien tus datos, puedes reclamar ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es">aepd.es</a>).</p>
+</section>
+<section><h2>Menores</h2>
+<p>CaesarDB es una herramienta profesional dirigida a mayores de edad; no tratamos conscientemente datos de menores.</p>
+</section>
+<section><h2>Cambios</h2>
+<p>Si cambiamos esta política, actualizaremos la fecha de arriba. Si en el futuro se añadiera cualquier comunicación nueva, se informaría de forma destacada.</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB es software de código privado, distribuido como binarios firmados. Sin cookies, sin trackers y sin telemetría. Esta web es estática y no carga recursos externos.</p>
+<p><a href="terms.html">Términos de uso</a> · <a href="privacy.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Reembolsos</a> · <a href="legal.html">Aviso legal</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

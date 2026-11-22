@@ -1,0 +1,66 @@
+LICENCIA PROPIETARIA DE CAESARDB / CAESARDB PROPRIETARY LICENSE
+
+Copyright (c) 2026 Cesar Garrido. Todos los derechos reservados / All rights reserved.
+
+CaesarDB NO es software libre ni de código abierto, ni está licenciado bajo FSL, MIT, Apache ni ninguna licencia abierta o de código disponible.
+CaesarDB is NOT free or open-source software, and is NOT licensed under FSL, MIT, Apache or any open or source-available licence.
+
+════════════════════════════════════════════════════════════════
+ESPAÑOL
+════════════════════════════════════════════════════════════════
+
+1. TITULARIDAD. El código fuente, los binarios, la documentación, la marca, el icono y la web de CaesarDB son propiedad exclusiva de Cesar Garrido (el «Autor»). No se transfiere ningún derecho de propiedad intelectual; solo se concede el derecho de uso descrito aquí.
+
+2. LICENCIA DE USO. Sujeto al cumplimiento de esta licencia y de los Términos de Uso publicados en https://cesargarridor.github.io/caesardb/terms.html, el Autor concede al usuario una licencia personal, no exclusiva, intransferible y revocable para instalar y usar los binarios oficiales de CaesarDB: (a) con el plan Free, sin pago; (b) con una licencia Pro de pago, en un máximo de 3 equipos por licencia.
+
+3. RESTRICCIONES. Salvo lo que la ley aplicable permita de forma imperativa, queda prohibido: (a) acceder al código fuente, copiarlo o redistribuirlo; (b) descompilar, desensamblar o aplicar ingeniería inversa a la aplicación; (c) modificar, adaptar o crear obras derivadas; (d) vender, alquilar, sublicenciar o redistribuir la aplicación o sus claves de licencia; (e) eludir, desactivar o manipular los mecanismos de licencia, planes o límites; (f) usar la aplicación para infringir la ley o derechos de terceros.
+
+4. LICENCIAS PROMOCIONALES. Los códigos gratuitos, de cortesía o promocionales pueden revocarse en cualquier momento.
+
+5. SOFTWARE «TAL CUAL» (AS IS). En la máxima medida permitida por la legislación aplicable, CaesarDB se entrega «tal cual» y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas, incluidas las de comerciabilidad, idoneidad para un fin concreto, ausencia de errores, de interrupciones o de pérdida de datos.
+
+6. PÉRDIDA O CORRUPCIÓN DE DATOS. El usuario es el único responsable de sus operaciones sobre DynamoDB (lecturas, escrituras, borrados, migraciones, importaciones, truncados, operaciones masivas, transacciones y cualquier otra) y de mantener copias de seguridad activas (por ejemplo, Point-in-Time Recovery o backups bajo demanda) antes de modificar, migrar o borrar datos. El Autor no es responsable, en la máxima medida permitida por la legislación aplicable, de ninguna pérdida, corrupción, alteración o borrado de datos, ni de sus consecuencias, causados por el uso de la aplicación o por fallos de ésta.
+
+7. COSTES DE AWS Y DE TERCEROS. El Autor no es responsable de ningún cargo en la factura de AWS ni de terceros derivado del uso de la aplicación, incluidos Scan y consultas masivas, importaciones, copias entre tablas, Live Tail de DynamoDB Streams, métricas de CloudWatch o el uso del servidor MCP por agentes de inteligencia artificial.
+
+8. MCP Y ESCRITURAS. El servidor MCP y todas las operaciones de escritura se ejecutan bajo la responsabilidad y con los permisos IAM del usuario. El usuario debe usar perfiles con el mínimo privilegio necesario.
+
+9. LIMITACIÓN DE RESPONSABILIDAD. En la máxima medida permitida por la legislación aplicable, la responsabilidad total del Autor frente al usuario, por cualquier causa y bajo cualquier teoría legal, queda limitada al importe exacto que el usuario haya pagado por su licencia de CaesarDB (cero euros en el plan Free). En ningún caso responderá el Autor de daños indirectos, lucro cesante, pérdida de negocio, de datos o de reputación.
+
+10. DERECHOS IRRENUNCIABLES. Nada en esta licencia excluye ni limita la responsabilidad por dolo o negligencia grave, por daños personales, ni los derechos que la legislación imperativa reconozca a los consumidores (incluida la UE), que prevalecerán sobre cualquier cláusula en contrario.
+
+11. TERMINACIÓN. La licencia termina automáticamente si el usuario incumple estas condiciones. Tras la terminación debe dejar de usar y desinstalar la aplicación.
+
+12. LEY APLICABLE. Esta licencia se rige por la legislación española. Para los consumidores, serán competentes los tribunales de su domicilio; para el resto, los de Jaén (España).
+
+13. SOFTWARE DE TERCEROS. CaesarDB incluye componentes de terceros bajo sus propias licencias, que no quedan afectadas por esta licencia.
+
+════════════════════════════════════════════════════════════════
+ENGLISH
+════════════════════════════════════════════════════════════════
+
+1. OWNERSHIP. The source code, binaries, documentation, brand, icon and website of CaesarDB are the exclusive property of Cesar Garrido (the "Author"). No intellectual property rights are transferred; only the right of use described here is granted.
+
+2. LICENCE. Subject to compliance with this licence and the Terms of Use at https://cesargarridor.github.io/caesardb/terms.html, the Author grants the user a personal, non-exclusive, non-transferable, revocable licence to install and use the official CaesarDB binaries: (a) under the Free plan, at no charge; (b) under a paid Pro licence, on up to 3 devices per licence.
+
+3. RESTRICTIONS. Except where mandatory law permits otherwise, you may not: (a) access, copy or redistribute the source code; (b) decompile, disassemble or reverse engineer the application; (c) modify, adapt or create derivative works; (d) sell, rent, sublicense or redistribute the application or licence keys; (e) circumvent, disable or tamper with licensing, plan or limit mechanisms; (f) use the application to infringe the law or third-party rights.
+
+4. PROMOTIONAL LICENCES. Free, complimentary or promotional codes may be revoked at any time.
+
+5. "AS IS". TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CAESARDB IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM ERRORS, INTERRUPTIONS OR DATA LOSS.
+
+6. DATA LOSS OR CORRUPTION. The user is solely responsible for their operations on DynamoDB (reads, writes, deletes, migrations, imports, truncation, bulk operations, transactions and any other) and for keeping active backups (for example Point-in-Time Recovery or on-demand backups) before modifying, migrating or deleting data. To the maximum extent permitted by applicable law, the Author is not liable for any loss, corruption, alteration or deletion of data, or its consequences, caused by use of the application or by its defects.
+
+7. AWS AND THIRD-PARTY COSTS. The Author is not liable for any AWS or third-party charges arising from use of the application, including bulk Scans and queries, imports, cross-table copies, DynamoDB Streams Live Tail, CloudWatch metrics, or use of the MCP server by AI agents.
+
+8. MCP AND WRITES. The MCP server and all write operations run under the user's own responsibility and IAM permissions. Users should use least-privilege profiles.
+
+9. LIMITATION OF LIABILITY. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR'S TOTAL LIABILITY TO THE USER, FOR ANY CAUSE AND UNDER ANY LEGAL THEORY, IS LIMITED TO THE EXACT AMOUNT THE USER PAID FOR THEIR CAESARDB LICENCE (ZERO ON THE FREE PLAN). IN NO EVENT IS THE AUTHOR LIABLE FOR INDIRECT DAMAGES, LOST PROFITS, LOSS OF BUSINESS, DATA OR REPUTATION.
+
+10. NON-WAIVABLE RIGHTS. Nothing in this licence excludes or limits liability for wilful misconduct or gross negligence, for personal injury, or any rights that mandatory law (including EU consumer law) grants to consumers, which prevail over any contrary term.
+
+11. TERMINATION. The licence terminates automatically if the user breaches these terms. After termination the user must stop using and uninstall the application.
+
+12. GOVERNING LAW. This licence is governed by Spanish law. For consumers, the courts of their place of residence have jurisdiction; otherwise, the courts of Jaén (Spain).
+
+13. THIRD-PARTY SOFTWARE. CaesarDB includes third-party components under their own licences, which are unaffected by this licence.

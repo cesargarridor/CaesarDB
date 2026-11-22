@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Privacy policy</title>
+<meta name="description" content="CaesarDB privacy policy (GDPR): zero telemetry.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="../assets/logo.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="../assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="support.html">Support</a><a href="security.html">Security</a></nav>
+<div class="lang" aria-label="Idioma / Language"><a href="../privacy.html" hreflang="es" lang="es">ES</a><span>EN</span></div>
+</div></header>
+<main><div class="wrap narrow legal-page">
+<h1>Privacy policy</h1>
+<div class="meta">Last updated: 22 November 2026</div>
+<div class="box"><p><strong>Summary.</strong> CaesarDB has no telemetry. Your credentials and configuration stay on your machine, encrypted, and are not sent to the author. The only network connections are your AWS endpoint, license validation with Polar and update checks on GitHub.</p></div><section><h2>Controller</h2>
+<p>Cesar Garrido (persona física), tax ID 78164624K, Avenida Madrid, 23003 Jaén (España). Contact: <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a>.</p>
+</section>
+<section><h2>What data the application touches</h2>
+<ul><li><strong>Credentials and configuration</strong> (secret access keys, session tokens, proxy credentials, profiles and connections): stored <strong>only on your machine</strong>, in locally encrypted files (AES-256-GCM, no system keychain). <strong>They are not sent to the author</strong> or to any server of ours.</li><li><strong>Your table data</strong>: travels only between your machine and your DynamoDB endpoint (AWS, your local emulator, or the proxy you configure). The author does not receive it.</li><li><strong>Zero telemetry</strong>: no analytics, no crash reports, no usage identifiers.</li><li>Files you export or import are chosen by you and saved where you say.</li></ul>
+</section>
+<section><h2>Network communications by the author or third parties</h2>
+<p>Besides whatever you configure towards AWS, the application makes only these two communications:</p><ul><li><strong>License validation with Polar</strong>: the license key and the machine name are sent to activate or check it.</li><li><strong>Update check</strong> on GitHub Releases (a manifest and signed packages are downloaded). GitHub may see your IP address as with any download.</li></ul>
+</section>
+<section><h2>Payments and billing: Polar</h2>
+<p>Purchases are processed by <strong>Polar</strong> as merchant of record and as an independent processor/controller of payment and billing data (name, email, address, country, taxes). The author does not see your card or bank details and only receives from Polar the information needed to manage your license and customer support. See Polar’s privacy policy on its site. You can manage your activations and receipts in the <a href="https://polar.sh/caesar-api-client/portal" data-portal>customer portal</a>.</p>
+</section>
+<section><h2>This website</h2>
+<p>The site is static: it <strong>uses no cookies</strong>, includes no analytics, trackers, third-party fonts or scripts, and stores nothing in your browser (see <a href="cookies.html">Cookies</a>). The download buttons query GitHub’s public API (<code>api.github.com</code>) to find the latest installer; GitHub may see your IP address in that request. It is hosted on a static hosting provider (GitHub Pages), which may process your IP address in technical server logs under its own policy.</p>
+</section>
+<section><h2>Purposes and legal basis</h2>
+<ul><li>Managing the license and providing the activation service: performance of a contract (Art. 6(1)(b) GDPR).</li><li>Handling support requests: performance of a contract / legitimate interest (Art. 6(1)(b) and 6(1)(f)).</li><li>Complying with legal obligations (tax, consumer law): Art. 6(1)(c).</li></ul>
+</section>
+<section><h2>Retention, recipients and transfers</h2>
+<p>We keep license and support data for as long as the relationship lasts and for the statutory limitation periods. Recipients are Polar (payments and licenses) and GitHub (hosting and updates); both may process data outside the European Economic Area with the safeguards provided by the GDPR (such as standard contractual clauses). We do not sell data.</p>
+</section>
+<section><h2>Your rights</h2>
+<p>You may exercise your rights of access, rectification, erasure, objection, restriction and portability (GDPR and Spanish LOPDGDD rights) by writing to <a href="mailto:cgarrui0301@gmail.com">cgarrui0301@gmail.com</a>. We reply within the legal deadline (one month). If you believe we have mishandled your data you may complain to the <strong>Spanish Data Protection Agency</strong> (<a href="https://www.aepd.es">aepd.es</a>) or to your local authority.</p>
+</section>
+<section><h2>Minors</h2>
+<p>CaesarDB is a professional tool aimed at adults; we do not knowingly process data of minors.</p>
+</section>
+<section><h2>Changes</h2>
+<p>If we change this policy we will update the date above. If any new communication were added in the future, it would be announced prominently.</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB is closed-source software, distributed as signed binaries. No cookies, no trackers and no telemetry. This site is static and loads no external resources.</p>
+<p><a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Refunds</a> · <a href="legal.html">Legal notice</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

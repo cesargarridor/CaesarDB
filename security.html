@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Seguridad</title>
+<meta name="description" content="Cómo protege CaesarDB tus credenciales y datos, y cómo reportar vulnerabilidades.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Principal"><a href="index.html">Inicio</a><a href="pricing.html">Precios</a><a href="support.html">Soporte</a><a href="security.html" aria-current="page">Seguridad</a></nav>
+<div class="lang" aria-label="Idioma / Language"><span>ES</span><a href="en/security.html" hreflang="en" lang="en">EN</a></div>
+</div></header>
+<main><div class="wrap narrow legal-page">
+<h1>Seguridad</h1>
+<div class="meta">Última actualización: 22 de noviembre de 2026</div>
+<div class="box"><p><strong>Resumen.</strong> Local-first, credenciales cifradas en tu equipo, cero telemetría, actualizaciones firmadas y un servidor MCP acotado. Las operaciones se ejecutan con tus permisos IAM y bajo tu responsabilidad.</p></div><section><h2>Credenciales y datos locales</h2>
+<ul><li>Claves secretas, tokens de sesión y credenciales de proxy en un almacén local cifrado con <strong>AES-256-GCM</strong>, con permisos restringidos al usuario. Nunca salen de tu equipo.</li><li>La clave de licencia se guarda cifrada y ligada al equipo.</li><li>Los mensajes de error ocultan credenciales de URLs y proxies.</li></ul>
+</section>
+<section><h2>Protecciones al operar</h2>
+<ul><li>Modo <strong>Read-Only</strong> aplicado en el backend (Rust), no solo en la interfaz; las conexiones etiquetadas <code>prod</code> se abren en solo lectura.</li><li>En AWS con el plan Free, PartiQL admite únicamente <code>SELECT</code>.</li><li>Confirmaciones y vista de cambios (<em>Staged Changes</em>) antes de escribir, y deshacer local.</li></ul>
+</section>
+<section><h2>Servidor MCP</h2>
+<p>Solo lectura por defecto; no expone PartiQL; cada llamada tiene topes (una petición, ≤ 100 elementos, 1 MB). Las herramientas de escritura requieren activarlas expresamente y no funcionan con Read-Only. Aun así, <strong>el MCP actúa con tus credenciales y permisos IAM y bajo tu responsabilidad</strong>: usa un rol de mínimo privilegio.</p>
+</section>
+<section><h2>Actualizaciones y distribución</h2>
+<p>CaesarDB es de código privado y se distribuye como binarios firmados. Las actualizaciones se descargan desde GitHub Releases y se verifican con firma antes de instalarse. Las dependencias se auditan periódicamente.</p>
+</section>
+<section><h2>Tu parte</h2>
+<p>Mantén backups activos (PITR), usa credenciales de mínimo privilegio, activa el cifrado de disco del sistema operativo y vigila los costes de AWS.</p>
+</section>
+<section><h2>Reportar una vulnerabilidad</h2>
+<p>Escribe a <a href="mailto:cgarrui0301@gmail.com?subject=Vulnerabilidad%20CaesarDB">cgarrui0301@gmail.com</a> con la descripción, pasos para reproducirla, versión y sistema operativo. Pedimos divulgación responsable: no publiques el fallo antes de que se corrija. Agradecemos el aviso y responderemos lo antes posible.</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB es software de código privado, distribuido como binarios firmados. Sin cookies, sin trackers y sin telemetría. Esta web es estática y no carga recursos externos.</p>
+<p><a href="terms.html">Términos de uso</a> · <a href="privacy.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Reembolsos</a> · <a href="legal.html">Aviso legal</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

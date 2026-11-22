@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaesarDB · Precios</title>
+<meta name="description" content="Free para explorar, Pro para operar. Pago único, sin suscripción.">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="32" height="32"><span>Caesar<b>DB</b></span></a>
+<nav class="main" aria-label="Principal"><a href="index.html">Inicio</a><a href="pricing.html" aria-current="page">Precios</a><a href="support.html">Soporte</a><a href="security.html">Seguridad</a></nav>
+<div class="lang" aria-label="Idioma / Language"><span>ES</span><a href="en/pricing.html" hreflang="en" lang="en">EN</a></div>
+</div></header>
+<main><div class="wrap">
+<h1>Precios y comparativa</h1><p class="lead">Free para explorar, Pro para operar. Pago único, sin suscripción.</p>
+<div class="box good"><p><strong>Localhost es siempre gratis:</strong> con <code>localhost</code>, <code>127.0.0.1</code> o <code>::1</code> (DynamoDB Local o el emulador de CaesarDB) todo está desbloqueado, también en Free.</p></div>
+<div class="box warn"><p><strong>En AWS, Free es solo lectura</strong>, con 1 pestaña activa y PartiQL <code>SELECT</code>. Escribir, migrar o administrar en AWS requiere Pro. El bloqueo se aplica en el backend (Rust), no solo en la interfaz.</p></div>
+<div class="price-cards"><div class="plan pro"><h3>CaesarDB Pro</h3><div class="price">49 €</div><p class="tag">pago único · precio de lanzamiento, después 69 €</p><ul><li>Todas las funciones Pro en tu cuenta, hasta 3 equipos.</li></ul><a class="btn" data-buy href="https://buy.polar.sh/polar_cl_kHgkDXSwdOPquaqy306z5ZUvmwxE4lZp0mWr52ZqaAc">Comprar Pro</a></div>
+<div class="plan"><h3>Caesar Suite Bundle</h3><div class="price">79 €</div><p class="tag">Caesar + CaesarDB</p><ul><li>El cliente API Caesar y CaesarDB Pro juntos.</li></ul><a class="btn" data-buy href="https://buy.polar.sh/polar_cl_kHgkDXSwdOPquaqy306z5ZUvmwxE4lZp0mWr52ZqaAc">Comprar Suite</a></div>
+<div class="plan"><h3>CaesarDB Team</h3><div class="price">desde 45 €</div><p class="tag">por asiento · descuentos por volumen</p><ul><li>1–4 asientos: 69 € · 5–14: 55 € · 15–49: 45 €. Para más de 49, consúltanos.</li></ul><a class="btn ghost" href="mailto:cgarrui0301@gmail.com?subject=CaesarDB%20Team">Contactar para Team</a></div></div>
+<p class="sub">Precios sin impuestos incluidos en esta tabla; Polar calcula y muestra los impuestos aplicables en el pago antes de que pagues.</p>
+<h2>Activación y gestión</h2><p>Cada licencia se activa en hasta <strong>3 equipos</strong>. Gestiona activaciones, recibos y equipos perdidos en el <a href="https://polar.sh/caesar-api-client/portal" data-portal>portal de cliente de Polar</a>. Los pagos los procesa Polar como <em>merchant of record</em>. Reembolsos: <a href="refunds.html">política</a>.</p>
+<h2>Comparativa completa Free vs Pro</h2><p class="sub">Misma matriz que sigue la aplicación. Localhost: todo desbloqueado en ambos planes.</p>
+<div class="tw"><table class="matrix"><thead><tr><th>Bloque</th><th>Free</th><th>Pro</th></tr></thead><tbody>
+<tr><td>1 · Entornos y Auth</td><td>Local 100% completo; todos los métodos de auth AWS (<code>~/.aws</code>, SSO con botón <code>aws sso login</code>, <code>credential_process</code>, MFA, Proxy HTTP/HTTPS y CA del sistema) en <strong>solo lectura</strong>; máx <strong>1 pestaña activa</strong> en AWS Cloud; etiquetas de color por entorno (<code>prod</code>, <code>dev</code>, <code>local</code>)</td><td>Escritura completa en AWS (<code>PutItem</code>, <code>DeleteItem</code>, <code>BatchWriteItem</code>); pestañas ilimitadas y <strong>Split View</strong> (dos tablas o prod vs dev lado a lado); modo <strong>Read-Only</strong> de seguridad (bloqueo en Rust, auto-activable si el perfil contiene <code>prod</code>); <strong>Staged Changes / Safe Mode</strong> (acumular ediciones/borrados en local, ver Diff completo y confirmar con <code>Cmd+S</code>)</td></tr>
+<tr><td>2 · Consultas</td><td>Scan, Query (PK/SK/GSI/LSI), paginación cursor; constructor visual de FilterExpression (AND/OR, <code>=</code>, <code>&lt;></code>, contains, begins_with, between, attribute_exists, attribute_not_exists, size()); PartiQL solo SELECT en AWS (completo en local) con Cmd+Enter; búsqueda instantánea en memoria sobre resultados cargados; métricas reales en StatusBar: RCU (<code>ReturnConsumedCapacity::Total</code>), ScannedCount vs Count y latencia ms</td><td>PartiQL de escritura con autocompletado de tablas/atributos e historial; <strong>Saved Queries Git-friendly</strong> (<code>.json</code>, variables <code>{{param}}</code>), historial y Bookmarks; <strong>Transacciones</strong> (TransactWriteItems / TransactGetItems); <strong>«Cargar todos hasta N items»</strong> con botón Stop</td></tr>
+<tr><td>3 · DataGrid e Inspector</td><td>DataGrid virtualizada + fijar (PK/SK), ocultar y redimensionar columnas; Inspector Clean JSON ↔ Raw JSON ↔ <strong>Tree View</strong> colapsable; autodetectores: Epoch/TTL (tooltip fecha humana y expiración), JSON dentro de String (botón formatear/inspeccionar), vista Binarios (B/BS Base64/Hex/UTF-8), peso exacto del item (KB / 400 KB); menú contextual celdas/filas (copiar valor, Clean JSON, Raw JSON, comando AWS CLI <code>get-item</code>); Cmd+K (perfil, región, tabla, GSI)</td><td>Vistas Single-Table Design (agrupar/filtrar por prefijo PK/SK o <code>entityType</code>, ocultando columnas vacías); edición inline + <strong>Duplicar item</strong>; preservación de tipos SS/NS/BS/B y aviso de mutación de PK/SK al guardar en AWS; <strong>Diff visual lado a lado</strong> entre 2 items; historial local + Undo (Cmd+Z) con snapshot previo</td></tr>
+<tr><td>4 · Masivo y Migración</td><td>Copiar/exportar la página actual a JSON</td><td><strong>Clonar esquema AWS → Local</strong> en 1 clic (DescribeTable con GSIs/LSIs → crea tabla en localhost:8000); <strong>Copiar/Mover items</strong> entre tablas, perfiles o regiones (con transformación de prefijos PK/SK); <strong>Acciones Bulk</strong> (borrado y edición masiva de atributos); <strong>Import/Export</strong> completo (JSON, NDJSON, Raw JSON, CSV; BatchWriteItem de 25, UnprocessedItems, backoff exponencial); <strong>Truncate Table</strong> (solo dev/local, confirmación explícita)</td></tr>
+<tr><td>5 · Admin e Infra</td><td>Panel de propiedades de tabla en <strong>solo lectura</strong> (PK/SK, GSIs/LSIs, TTL, PITR, KMS, Global Tables, Billing Mode)</td><td><strong>Crear y borrar tablas</strong> + añadir/eliminar GSIs viendo estado (CREATING/ACTIVE/BACKFILLING); gestionar <strong>TTL</strong>, <strong>PITR</strong> y crear/restaurar <strong>Backups On-Demand</strong></td></tr>
+<tr><td>6 · Tiempo real</td><td>—</td><td><strong>Live Tail de DynamoDB Streams</strong> (INSERT/MODIFY/REMOVE con diff OldImage vs NewImage); <strong>Métricas CloudWatch</strong> (gráficas 1h/24h/7d RCU/WCU, Throttling, Latencia)</td></tr>
+<tr><td>7 · Código e IA</td><td><strong>Emulador local en 1 clic</strong> (lanzar/detener un DynamoDB local ligero tipo Dynoxide si está instalado, o guiar instalación sin Docker)</td><td><strong>Copy as Code</strong> (TypeScript <code>@aws-sdk/lib-dynamodb</code>, Python boto3, Rust aws-sdk-dynamodb, Go, AWS CLI); <strong>Exportar esquema a IaC</strong> (Terraform, CDK TS, CloudFormation, SAM); <strong>Inferencia de tipos</strong> (muestrear items → interfaz TS, Zod o struct Rust serde); <strong>Modelador de datos</strong> (importar/exportar <code>.json</code> compatibles con NoSQL Workbench); <strong>Servidor MCP local</strong> (Read-Only por defecto)</td></tr>
+</tbody></table></div>
+<h2>Responsabilidad</h2><p>Las operaciones en DynamoDB, el servidor MCP y los costes de AWS corren por tu cuenta y con tus permisos IAM. Mantén backups (PITR). Ver <a href="terms.html">Términos de uso</a>.</p>
+</div></main>
+<footer><div class="wrap">
+<p>CaesarDB es software de código privado, distribuido como binarios firmados. Sin cookies, sin trackers y sin telemetría. Esta web es estática y no carga recursos externos.</p>
+<p><a href="terms.html">Términos de uso</a> · <a href="privacy.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Reembolsos</a> · <a href="legal.html">Aviso legal</a></p>
+<p>© CaesarDB · Cesar Garrido (persona física)</p>
+</div></footer>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
