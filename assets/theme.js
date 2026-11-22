@@ -4,6 +4,16 @@
   try { t = localStorage.getItem(KEY) || ""; } catch (e) {}
   if (t !== "dark" && t !== "light") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   root.setAttribute("data-theme", t);
+  // Si no has elegido tema a mano, sigue los cambios de claro/oscuro del sistema en vivo.
+  try {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    mq.addEventListener("change", function (e) {
+      var chosen = ""; try { chosen = localStorage.getItem(KEY) || ""; } catch (x) {}
+      if (chosen === "dark" || chosen === "light") return;
+      root.setAttribute("data-theme", e.matches ? "dark" : "light");
+      var b = document.querySelector(".theme-btn"); if (b) b.textContent = e.matches ? "☀" : "☾";
+    });
+  } catch (e) {}
   document.addEventListener("DOMContentLoaded", function () {
     var b = document.querySelector(".theme-btn");
     if (!b) return;
