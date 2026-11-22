@@ -13,7 +13,7 @@
       pro: "Función Pro", proMsg: "Escribir en AWS, Live Tail y métricas de CloudWatch son Pro. En localhost todo está desbloqueado.",
       seePlans: "Ver planes", pause: "Pausar", resume: "Reanudar", waiting: "Esperando eventos del stream…", demo: "Datos simulados · nada sale de tu navegador",
       deleted: "Item borrado (simulado)", dupd: "Item duplicado (simulado)", rcuL: "RCU consumidas / s", wcuL: "WCU consumidas / s", thr: "Throttling", p99: "Latencia p99",
-      noRows: "Sin resultados. Prueba con USER#u001 y ORDER#.", ro: "Solo lectura"
+      noRows: "Sin resultados. Prueba con USER#u001 y ORDER#.", ro: "Solo lectura", types: "Tipos de objeto"
     },
     en: {
       title: "CaesarDB · Orders", tables: "Tables", env: "Environment", local: "Local · localhost:8000", aws: "AWS · prod (read-only)",
@@ -23,7 +23,7 @@
       pro: "Pro feature", proMsg: "Writing to AWS, Live Tail and CloudWatch metrics are Pro. On localhost everything is unlocked.",
       seePlans: "See plans", pause: "Pause", resume: "Resume", waiting: "Waiting for stream events…", demo: "Simulated data · nothing leaves your browser",
       deleted: "Item deleted (simulated)", dupd: "Item duplicated (simulated)", rcuL: "RCU consumed / s", wcuL: "WCU consumed / s", thr: "Throttling", p99: "p99 latency",
-      noRows: "No results. Try USER#u001 and ORDER#.", ro: "Read-only"
+      noRows: "No results. Try USER#u001 and ORDER#.", ro: "Read-only", types: "Object types"
     }
   }[L];
   var PRICING = L === "en" ? "pricing.html" : "pricing.html";
@@ -142,6 +142,10 @@
     else q.appendChild(field("filter", TXT.filter, S.filter, "14rem"));
     q.appendChild(btn(TXT.run + " ⌘↵", "sim-run", function () { run(); render(); }));
     v.appendChild(q);
+    var counts = {}; S.rows.forEach(function (r) { counts[r.entityType] = (counts[r.entityType] || 0) + 1; });
+    var lg = el("div", "sim-legend", [el("b", null, [TXT.types])]);
+    Object.keys(counts).forEach(function (k) { lg.appendChild(el("span", "lgd " + k, [el("span", null, [k]), el("em", null, [String(counts[k])])])); });
+    v.appendChild(lg);
     var cols = ["PK", "SK", "entityType"], extra = [];
     S.rows.forEach(function (r) { Object.keys(r).forEach(function (k) { if (cols.indexOf(k) < 0 && extra.indexOf(k) < 0) extra.push(k); }); });
     cols = cols.concat(extra.slice(0, 4));
@@ -154,7 +158,10 @@
       var tb = el("tbody");
       S.rows.slice(0, 40).forEach(function (r) {
         var tr = el("tr", "ent-" + r.entityType + (S.sel === r ? " on" : ""));
-        cols.forEach(function (c, i) { tr.appendChild(el("td", i < 2 ? "key" : "", [r[c] == null ? "" : String(r[c])])); });
+        cols.forEach(function (c, i) {
+          var val = r[c] == null ? "" : String(r[c]);
+          tr.appendChild(el("td", i < 2 ? "key" : "", [c === "entityType" ? el("span", "tb tb-" + val, [val]) : val]));
+        });
         tr.addEventListener("click", function () { S.sel = r; render(); });
         tb.appendChild(tr);
       });

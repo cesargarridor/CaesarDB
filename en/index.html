@@ -6,7 +6,7 @@
 <title>CaesarDB · Native DynamoDB client</title>
 <meta name="description" content="CaesarDB is a fast, lightweight desktop client for Amazon DynamoDB. Local-first: your credentials never leave your machine and there is no telemetry.">
 <meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#050b1d">
+<meta name="theme-color" content="#1a73ff">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="../assets/logo.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -18,16 +18,17 @@
 <div class="lang" aria-label="Idioma / Language"><a href="../index.html" hreflang="es" lang="es">ES</a><span>EN</span></div>
 <a class="btn line sm nav-dl" href="index.html#descarga">Download</a>
 </div></header>
-<main><div class="wrap">
-<section class="hero2">
+<main>
+<section class="hero2"><div class="wrap">
 <a class="pill" href="#descarga"><i></i><span data-dl-ver>CaesarDB</span> →</a>
 <h1 class="mega">Your DynamoDB, <em>native</em> and hassle-free.</h1>
 <p class="lead">A fast, lightweight desktop client (Tauri + Rust) to explore, query and operate your DynamoDB tables. Local-first: your credentials never leave your machine and there is no telemetry.</p>
 <div class="btns"><a class="btn lg" data-dl-auto data-label="Download for {os}" href="#">Download for …</a><a class="btn ghost lg" href="pricing.html">See plans</a></div>
 <p class="sub"><span data-dl-main-meta></span> By downloading you accept the <a href="terms.html">Terms of Use</a>.</p>
+<div class="checks"><span>Free on localhost</span><span>Zero telemetry</span><span>macOS, Windows and Linux</span></div>
 <div class="stage" id="simulador"><div id="sim" class="sim" aria-label="CaesarDB"></div><noscript><p class="sub">A simulated CaesarDB running in your browser: run Query and Scan, open the Inspector, switch to AWS read-only and watch the Streams Live Tail in real time.</p></noscript></div>
-</section>
-<section class="sec" id="funciones"><h2>Built to be fast. <em>Designed to stay out of your way.</em></h2><p class="sub">Everything you do daily with DynamoDB, without waiting and with safety first.</p><div class="bento">
+</div></section>
+<section class="band" id="funciones"><div class="wrap"><h2 class="t">Built to be fast. <em>Designed to stay out of your way.</em></h2><p class="sub">Everything you do daily with DynamoDB, without waiting and with safety first.</p><div class="bento">
 <div class="c w2"><i>01</i><h3>Queries</h3><p>Scan and Query by PK, SK, GSI and LSI, a visual filter builder and PartiQL with ⌘+Enter. Real metrics: RCU, scanned vs returned and latency.</p></div>
 <div class="c "><i>02</i><h3>DataGrid and Inspector</h3><p>Virtualized table, Clean/Raw JSON and tree, TTL and binary detectors, and exact size against 400 KB.</p></div>
 <div class="c "><i>03</i><h3>Single-Table Design<span class="pro-tag">PRO</span></h3><p>Group by PK/SK prefix or <code>entityType</code>, with one color per object type.</p></div>
@@ -36,34 +37,34 @@
 <div class="c "><i>06</i><h3>Live Tail and metrics<span class="pro-tag">PRO</span></h3><p>Streams with OldImage/NewImage diff and CloudWatch (RCU, WCU, throttling).</p></div>
 <div class="c w2"><i>07</i><h3>MCP server<span class="pro-tag">PRO</span></h3><p>Your AI agent queries your tables read-only, with per-call limits.</p></div>
 <div class="c w2"><i>08</i><h3>One-click local emulator</h3><p>A local DynamoDB with no Docker. On localhost everything is unlocked, Free included.</p></div>
-</div></section>
-<section class="sec"><h2>Local-first. <em>Zero telemetry.</em></h2><p class="sub">Your credentials and your data stay on your machine. The app only validates the license with Polar and checks GitHub Releases for updates.</p><div class="bento">
+</div></div></section>
+<section class="band alt"><div class="wrap"><h2 class="t">Local-first. <em>Zero telemetry.</em></h2><p class="sub">Your credentials and your data stay on your machine. The app only validates the license with Polar and checks GitHub Releases for updates.</p><div class="bento">
 <div class="c"><i>01</i><h3>Encrypted credentials</h3><p>Profiles and proxy stored encrypted on your machine, with 0600 permissions.</p></div>
 <div class="c"><i>02</i><h3>Signed binaries</h3><p>Updates are signature-verified before they install.</p></div>
 <div class="c"><i>03</i><h3>Rust as the guardian</h3><p>Read-Only and plan limits are enforced in Rust, not just in the UI.</p></div>
 <div class="c"><i>04</i><h3>Zero telemetry</h3><p>No analytics, no cookies, no trackers.</p></div>
-</div></section>
-<section class="sec" id="planes"><h2>Clear and <em>frictionless.</em></h2><p class="sub">Localhost is always free. Writing to AWS needs Pro, paid once.</p><div class="plans">
+</div></div></section>
+<section class="band" id="planes"><div class="wrap"><h2 class="t">Clear and <em>frictionless.</em></h2><p class="sub">Localhost is always free. Writing to AWS needs Pro, paid once.</p><div class="plans">
 <div class="plan free"><h3>Free</h3><div class="price">€0</div><p class="tag">To explore and query</p><ul><li>Localhost and emulator: everything unlocked</li><li>AWS read-only, 1 tab</li><li>Scan, Query and PartiQL SELECT</li><li>DataGrid, Inspector and query metrics</li></ul><a class="btn ghost" data-dl-auto data-label="Download for {os}" href="#">Download</a></div>
 <div class="plan pro"><h3>Pro</h3><div class="price">€49</div><p class="tag">one-time payment · launch price (later €69)</p><ul><li>Full write access on AWS</li><li>Unlimited tabs and Split View</li><li>Read-Only, Staged Changes and Transactions</li><li>Migration, Bulk, Import/Export and Streams</li><li>Copy as Code, IaC and MCP server</li></ul><p class="more"><a href="pricing.html">Compare all features →</a></p><a class="btn" data-buy href="https://buy.polar.sh/polar_cl_kHgkDXSwdOPquaqy306z5ZUvmwxE4lZp0mWr52ZqaAc">Buy Pro</a></div>
 <div class="plan"><h3>Team</h3><div class="price">€30</div><p class="tag">per license · minimum 10</p><ul><li>Everything in Pro for each member</li><li>Minimum 10 licenses; add as many as you want</li><li>Seat-based license management</li><li>Direct contact for teams</li></ul><a class="btn ghost" href="mailto:cgarrui0301@gmail.com?subject=CaesarDB%20Team">Contact us</a></div>
-</div></section>
-<section class="sec" id="descargar"><span id="descarga"></span><h2>Download <em>CaesarDB.</em></h2><p class="sub">Signed installers for your system. The download starts directly, without going through GitHub.</p><div class="dl">
+</div></div></section>
+<section class="band alt" id="descargar"><div class="wrap"><span id="descarga"></span><h2 class="t">Download <em>CaesarDB.</em></h2><p class="sub">Signed installers for your system. The download starts directly, without going through GitHub.</p><div class="dl">
 <a data-dl="mac" href="#"><b>macOS</b><span>Universal installer (.dmg)</span><span data-dl-size="mac"></span></a>
 <a data-dl="windows" href="#"><b>Windows</b><span>x64 installer (.exe)</span><span data-dl-size="windows"></span></a>
 <a data-dl="linux" href="#"><b>Ubuntu / Linux</b><span>AppImage</span><span data-dl-size="linux"></span></a>
 </div>
-<p class="sub" style="margin-top:12px"><a data-dl-deb href="#">Ubuntu / Debian: or .deb package</a> · <span data-dl-ver></span></p><p class="sub">By downloading you accept the <a href="terms.html">Terms of Use</a>.</p></section>
-<section class="sec" id="faq"><h2>Frequently <em>asked questions.</em></h2><div class="faq2">
+<p class="sub" style="margin-top:14px"><a data-dl-deb href="#">Ubuntu / Debian: or .deb package</a> · <span data-dl-ver></span></p><p class="sub" style="margin:0 auto">By downloading you accept the <a href="terms.html">Terms of Use</a>.</p></div></section>
+<section class="band" id="faq"><div class="wrap"><h2 class="t">Frequently <em>asked questions.</em></h2><div class="faq2">
 <details><summary>Is it free on localhost?</summary><p>Yes. With DynamoDB Local or the CaesarDB emulator everything is unlocked, Free included.</p></details>
 <details><summary>What does Free include on AWS?</summary><p>Read-only, one active tab and PartiQL SELECT. You need Pro to write to AWS.</p></details>
 <details><summary>Does it send my data or credentials anywhere?</summary><p>No. Zero telemetry. It only validates the license with Polar and checks GitHub Releases for updates.</p></details>
 <details><summary>How many machines can I use my license on?</summary><p>Up to 3 machines, managed from the Polar portal.</p></details>
 <details><summary>Who is responsible for writes and AWS costs?</summary><p>You are. Operations run with your IAM permissions; keep backups (PITR) and watch your costs. See the <a href="terms.html">Terms</a>.</p></details>
 <details><summary>Is it open source?</summary><p>No: it is closed-source, distributed as signed binaries.</p></details>
-</div></section>
+</div></div></section>
 <section class="cta2"><h2>Fewer clicks. <em>More DynamoDB.</em></h2><div class="btns"><a class="btn lg" data-dl-auto data-label="Download for {os}" href="#">Download for …</a><a class="btn ghost lg" href="pricing.html">See plans</a></div></section>
-</div></main>
+</main>
 <footer><div class="wrap">
 <p>CaesarDB is closed-source software distributed as signed binaries. No cookies, no trackers and no telemetry. This site is static and loads no external resources.</p>
 <p><a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="refunds.html">Refunds</a> · <a href="legal.html">Legal notice</a></p>
