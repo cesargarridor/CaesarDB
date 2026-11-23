@@ -23,7 +23,7 @@
 <h1>Seguridad</h1>
 <div class="meta">Última actualización: 22 de noviembre de 2026</div>
 <div class="box"><p><strong>Resumen.</strong> Local-first, credenciales cifradas en tu equipo, cero telemetría, actualizaciones firmadas y un servidor MCP acotado. Las operaciones se ejecutan con tus permisos IAM y bajo tu responsabilidad.</p></div><section><h2>Credenciales y datos locales</h2>
-<ul><li>Claves secretas, tokens de sesión y credenciales de proxy en un almacén local cifrado con <strong>AES-256-GCM</strong>, con permisos restringidos al usuario. Nunca salen de tu equipo.</li><li>La clave de licencia se guarda cifrada y ligada al equipo.</li><li>Los mensajes de error ocultan credenciales de URLs y proxies.</li></ul>
+<ul><li>Claves secretas, tokens de sesión y credenciales de proxy en un almacén local cifrado con <strong>AES-256-GCM</strong> y una clave aleatoria guardada en el almacén de claves del sistema (Llavero de macOS, Administrador de credenciales de Windows, Secret Service en Linux), con permisos restringidos al usuario. Nunca salen de tu equipo.</li><li>La clave de licencia se guarda cifrada y ligada al equipo.</li><li>Los mensajes de error ocultan credenciales de URLs y proxies.</li></ul>
 </section>
 <section><h2>Protecciones al operar</h2>
 <ul><li>Modo <strong>Read-Only</strong> aplicado en el backend (Rust), no solo en la interfaz; las conexiones etiquetadas <code>prod</code> se abren en solo lectura.</li><li>En AWS con el plan Free, PartiQL admite únicamente <code>SELECT</code>.</li><li>Confirmaciones y vista de cambios (<em>Staged Changes</em>) antes de escribir, y deshacer local.</li></ul>

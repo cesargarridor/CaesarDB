@@ -23,7 +23,7 @@
 <h1>Security</h1>
 <div class="meta">Last updated: 22 November 2026</div>
 <div class="box"><p><strong>Summary.</strong> Local-first, credentials encrypted on your machine, zero telemetry, signed updates and a bounded MCP server. Operations run with your IAM permissions and at your responsibility.</p></div><section><h2>Credentials and local data</h2>
-<ul><li>Secret keys, session tokens and proxy credentials live in a local store encrypted with <strong>AES-256-GCM</strong>, with permissions restricted to the user. They never leave your machine.</li><li>The license key is stored encrypted and bound to the machine.</li><li>Error messages hide credentials in URLs and proxies.</li></ul>
+<ul><li>Secret keys, session tokens and proxy credentials live in a local store encrypted with <strong>AES-256-GCM</strong> and a random key kept in the system keychain (macOS Keychain, Windows Credential Manager, Secret Service on Linux), with permissions restricted to the user. They never leave your machine.</li><li>The license key is stored encrypted and bound to the machine.</li><li>Error messages hide credentials in URLs and proxies.</li></ul>
 </section>
 <section><h2>Safeguards when operating</h2>
 <ul><li><strong>Read-Only</strong> mode is enforced in the backend (Rust), not only in the interface; connections tagged <code>prod</code> open read-only.</li><li>On AWS with the Free plan, PartiQL accepts <code>SELECT</code> only.</li><li>Confirmations and a change review (<em>Staged Changes</em>) before writing, plus local undo.</li></ul>
